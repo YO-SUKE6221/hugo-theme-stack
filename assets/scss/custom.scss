@@ -7,3 +7,57 @@
     --base-font-family: var(--ja-font-family), "Lato", var(--sys-font-family), var(--zh-font-family), sans-serif;
     --code-font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+// Social button colors
+$email-bg-color: #578ad6;
+$facebook-bg-color: #3e5b98;
+$reddit-bg-color: #ff4500;
+$twitter-bg-color: #4da7de;
+
+// Share button for widget
+ul.widget-social {
+  font-size: 1.6em;
+  padding: 0px;
+  margin: 0px;
+  line-height: 0;
+
+  li {
+    display: inline;
+  }
+
+  a:hover {
+    z-index: 2;
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+
+  a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    text-align: center;
+    font-size: .85em;
+    line-height: 38px;
+    color: white;
+  }
+
+  a.sc-facebook {
+    background-color: $facebook-bg-color;
+    padding-top: 1px;
+  }
+
+  a.sc-twitter {
+    background-color: $twitter-bg-color;
+    padding-top: 1px;
+    padding-left: 2px;
+  }
+
+  a.sc-at, a.sc-mailbox, a.sc-envelope {
+    background-color: $email-bg-color;
+  }
+
+  a.sc-reddit {
+    background-color: $reddit-bg-color;
+  }
+
+}
